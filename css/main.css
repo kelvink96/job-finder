@@ -1,0 +1,28 @@
+/* Color Theme Swatches in Hex */
+/* Color Theme Swatches in RGBA */
+/* Color Theme Swatches in HSLA */
+html, body {
+  font-family: "Source Sans 3", sans-serif;
+}
+
+.bg-primary {
+  background-color: rgba(71, 93, 117, var(--bs-bg-opacity)) !important;
+}
+
+.bg-secondary {
+  background-color: rgba(249, 245, 248, var(--bs-bg-opacity)) !important;
+}
+
+.text-primary {
+  color: #475D75 !important;
+}
+
+.text-secondary {
+  color: #F9F5F8 !important;
+}
+
+main {
+  margin-top: 80px;
+}
+
+/*# sourceMappingURL=main.css.map */
