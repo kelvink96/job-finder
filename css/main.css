@@ -25,4 +25,9 @@ main {
   margin-top: 80px;
 }
 
+.ad-card {
+  background-size: contain;
+  background: url("../img/finder-ad-bg.jpg") no-repeat center;
+}
+
 /*# sourceMappingURL=main.css.map */
