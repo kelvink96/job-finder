@@ -21,6 +21,23 @@ html, body {
   color: #F9F5F8 !important;
 }
 
+.bg-lighter {
+  background-color: #F9F5F8;
+}
+
+.form-check-input:checked {
+  background-color: #475D75;
+  color: #475D75;
+}
+
+input:focus,
+.form-control:focus,
+.form-check-input:focus,
+.form-select:focus {
+  box-shadow: 0 0 0 0.25rem rgba(71, 93, 117, 0.25);
+  border-color: #475D75;
+}
+
 main {
   margin-top: 80px;
 }
@@ -28,6 +45,13 @@ main {
 .ad-card {
   background-size: contain;
   background: url("../img/finder-ad-bg.jpg") no-repeat center;
+}
+
+footer a, footer p, footer .nav-link, footer .btn, footer h3 {
+  color: #F9F5F8;
+}
+footer a, footer .nav-link {
+  text-transform: capitalize;
 }
 
 /*# sourceMappingURL=main.css.map */

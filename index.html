@@ -37,94 +37,110 @@
 <header>
   <nav class="navbar navbar-expand-lg navbar-light shadow-sm fixed-top bg-white">
     <div class="container">
-      <a class="navbar-brand d-flex align-items-center" href="#">
+      <a class="navbar-brand d-flex align-items-center" href="/">
         <img src="img/logo.png" alt="logo" class="me-3" width="60" height="60">
         <span class="text-uppercase fw-bold">jobs.lookr</span>
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+              aria-expanded="false" aria-label="offcanvasNavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link text-capitalize" href="#">jobs</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-capitalize" href="#">CV builder</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-capitalize" href="#">salaries & advice</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-capitalize" href="#">recommended jobs</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-capitalize" href="#">CV builder</a>
-          </li>
-        </ul>
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item me-2">
-            <a class="nav-link text-capitalize btn btn-outline-dark" href="#">sign in</a>
-          </li>
-          <li class="nav-item me-2">
-            <a class="nav-link text-capitalize btn btn-outline-dark" href="#">sign up</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-capitalize btn btn-outline-dark" href="#">for employers</a>
-          </li>
-        </ul>
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header pb-0">
+          <h5 class="offcanvas-title mb-0" id="offcanvasNavbarLabel">
+            <img src="img/logo.png" alt="logo" class="me-3" width="60" height="60">
+            <span class="text-uppercase fw-bold">jobs.lookr</span>
+          </h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link text-capitalize" href="#">jobs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-capitalize" href="#">CV builder</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-capitalize" href="#">salaries & advice</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-capitalize" href="#">recommended jobs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-capitalize" href="#">CV builder</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item me-0 me-lg-2 mb-2 mb-lg-0">
+              <a class="nav-link text-capitalize btn btn-outline-dark" href="#">sign in</a>
+            </li>
+            <li class="nav-item me-0 me-lg-2 mb-2 mb-lg-0">
+              <a class="nav-link text-capitalize btn btn-outline-dark" href="#">
+                <i class="fas fa-user-circle me-1"></i>sign up</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-capitalize btn btn-outline-dark" href="#">for employers</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </nav>
 </header>
 <main>
   <div class="container-fluid px-0">
-    <section class="py-5">
-      <div class="row container mx-auto align-items-center my-5">
-        <div class="col-6">
+    <section class="py-3 py-lg-5">
+      <div class="row container mx-auto align-items-center my-3 my-lg-5">
+        <div class="col-md-12 col-lg-6">
           <div class="d-flex gap-3">
             <button class="btn btn-primary">Looking for a Job!</button>
             <button class="btn btn-primary">Post a job!</button>
           </div>
           <h1 class="display-5 fw-bold">Explore more than <span class="text-primary">60,000+</span> jobs</h1>
           <p>Get the right job you deserve. Your dream is waiting</p>
-          <div class="d-flex gap-3">
+          <div class="d-flex flex-column flex-lg-row gap-3">
             <div class="input-group">
+              <span class="input-group-text bg-transparent">
+                <i class="fas fa-search"></i>
+              </span>
               <input type="text" class="form-control" placeholder="search job title..." id="inp-job-title">
-              <span class="input-group-text bg-transparent">
-                <i class="fas fa-map-marker-alt"></i>
-              </span>
             </div>
             <div class="input-group">
-              <input type="text" class="form-control" placeholder="search job title..." id="inp-job-location">
               <span class="input-group-text bg-transparent">
                 <i class="fas fa-map-marker-alt"></i>
               </span>
+              <input type="text" class="form-control" placeholder="search job location..." id="inp-job-location">
             </div>
-            <div class="col-2">
+            <div class="form-check mt-3 d-block d-lg-none">
+              <input class="form-check-input" type="checkbox" value="" id="remote-checkbox">
+              <label class="form-check-label" for="defaultCheck1">
+                Work from home/remote?
+              </label>
+            </div>
+            <div class="col-5 col-lg-2">
               <button class="btn btn-primary w-100">find jobs</button>
             </div>
           </div>
-          <div class="form-check mt-3">
+          <div class="form-check mt-3 d-none d-lg-block">
             <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
             <label class="form-check-label" for="defaultCheck1">
               Work from home/remote?
             </label>
           </div>
           <div class="d-flex mt-3 align-items-center">
-            <img src="img/user-1.jpg" alt="user 1" height="40" width="40" class="rounded-circle">
-            <p class="mb-0 ms-3 text-muted small">23,000+ candidates got their jobs <br> from <b>job.lookr</b></p>
+            <img src="img/user-1.jpg" alt="user 1" height="50" width="50" class="rounded-circle">
+            <p class="mb-0 ms-3 text-muted">23,000+ candidates got their jobs <br> from <b>job.lookr</b></p>
           </div>
         </div>
-        <div class="col-6">
+        <div class="col-md-12 col-lg-6 d-none d-lg-block">
           <img src="img/hero-1.jpg" alt="" class="img-fluid rounded-3">
         </div>
       </div>
     </section>
     <hr>
-    <section class="py-5">
-      <div class="container my-5">
+    <section class="py-3 py-lg-5">
+      <div class="container my-3 my-lg-5">
         <div class="section-title text-center mb-5">
           <p class="text-uppercase">don't know where to start?</p>
           <h3 class="display-6 fw-bold text-capitalize">Trending Searches</h3>
@@ -150,8 +166,8 @@
       </div>
     </section>
     <hr>
-    <section class="py-5">
-      <div class="container my-5">
+    <section class="py-3 py-lg-5">
+      <div class="container my-3 my-lg-5">
         <div class="section-title text-center mb-5">
           <h3 class="display-6 fw-bold text-capitalize">popular job categories</h3>
         </div>
@@ -294,8 +310,8 @@
       </div>
     </section>
     <hr>
-    <section class="py-5">
-      <div class="container my-5">
+    <section class="py-3 py-lg-5">
+      <div class="container my-3 my-lg-5">
         <div class="section-title text-center mb-5">
           <h3 class="display-6 fw-bold text-capitalize">featured job circulars</h3>
         </div>
@@ -518,15 +534,15 @@
       </div>
     </section>
     <hr>
-    <section class="py-5">
-      <div class="container my-5">
+    <section class="py-3 py-lg-5">
+      <div class="container my-3 my-lg-5">
         <div class="section-title text-center mb-5">
           <p>MAKING YOUR JOB SEARCH EASY</p>
           <h3 class="display-6 fw-bold text-capitalize">How <span class="text-decoration-underline">job.lookr</span> can
             help</h3>
         </div>
         <div class="section-body">
-          <div class="row row-cols-1 row-cols-md-3 g-3">
+          <div class="row row-cols-1 row-cols-md-3 g-3 text-center text-lg-start">
             <div class="col">
               <div class="card h-100 border-0">
                 <div class="card-header bg-transparent border-0 pb-0">
@@ -579,8 +595,8 @@
       </div>
     </section>
     <hr>
-    <section class="py-5">
-      <div class="container my-5">
+    <section class="py-3 py-lg-5">
+      <div class="container my-3 my-lg-5">
         <div class="section-title text-center mb-5">
           <p>DOWNLOAD OUR MOBILE APP</p>
           <h3 class="display-6 fw-bold text-capitalize">Experience <span
@@ -589,11 +605,11 @@
         </div>
         <div class="section-body">
           <div class="row align-items-center">
-            <div class="col-7">
+            <div class="col-sm-12 col-lg-7">
               <img src="img/devices.jpg" alt="devices" class="img-fluid">
             </div>
-            <div class="col-5">
-              <div class="d-flex flex-column w-75 gap-3">
+            <div class="col-sm-12 col-lg-5">
+              <div class="d-flex flex-column col-sm-12 col-lg-9 gap-3">
                 <button type="button" class="btn btn-outline-primary fs-5"><i class="fab fa-microsoft me-2"></i>download
                   on the microsoft store
                 </button>
@@ -610,17 +626,17 @@
       </div>
     </section>
     <hr>
-    <section class="py-5">
-      <div class="container my-5">
+    <section class="py-3 py-lg-5">
+      <div class="container my-3 my-lg-5">
         <div class="card bg-transparent border-0">
           <div class="card-body">
             <div class="row align-items-center">
-              <div class="col-6">
+              <div class="col-sm-12 col-lg-6 text-center text-lg-start">
                 <h5 class="display-6 fw-bold card-title">let employers find you</h5>
                 <button class="btn btn-primary"><i class="fas fa-upload me-2"></i>upload your CV/resume</button>
               </div>
-              <div class="col-6">
-                <img src="img/find.jpg" alt="find" class="img-fluid rounded-3">
+              <div class="col-sm-12 col-lg-6">
+                <img src="img/find.jpg" alt="find" class="img-fluid rounded-3 d-none d-lg-block">
               </div>
             </div>
           </div>
