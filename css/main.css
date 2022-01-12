@@ -38,6 +38,21 @@ input:focus,
   border-color: #475D75;
 }
 
+.form-range::-webkit-slider-thumb, .form-range::-moz-range-thumb, .form-range::-ms-thumb {
+  background: gray !important;
+}
+
+-webkit-slider-thumb {
+  box-shadow: red !important;
+}
+-webkit-slider-thumb:active {
+  background-color: red !important;
+}
+
+.form-range:focus::-webkit-slider-thumb, .form-range:focus::-moz-range-thumb, .form-range:focus::-ms-thumb {
+  box-shadow: red !important;
+}
+
 main {
   margin-top: 80px;
 }
@@ -52,6 +67,32 @@ footer a, footer p, footer .nav-link, footer .btn, footer h3 {
 }
 footer a, footer .nav-link {
   text-transform: capitalize;
+}
+
+/* Extra small devices (phones, 600px and down) */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  #collapseOtherFilters {
+    display: block;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .example {
+    background: blue;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .example {
+    background: orange;
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .example {
+    background: pink;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
