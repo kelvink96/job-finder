@@ -38,28 +38,69 @@ input:focus,
   border-color: #475D75;
 }
 
-.form-range::-webkit-slider-thumb, .form-range::-moz-range-thumb, .form-range::-ms-thumb {
-  background: gray !important;
+.form-check-label {
+  text-transform: capitalize;
 }
 
--webkit-slider-thumb {
-  box-shadow: red !important;
-}
--webkit-slider-thumb:active {
-  background-color: red !important;
+.btn {
+  text-transform: capitalize;
 }
 
-.form-range:focus::-webkit-slider-thumb, .form-range:focus::-moz-range-thumb, .form-range:focus::-ms-thumb {
-  box-shadow: red !important;
+.btn-primary {
+  background-color: #475D75 !important;
+  color: white !important;
+  border-color: #475D75 !important;
+}
+.btn-primary:hover {
+  opacity: 0.85;
+}
+.btn-primary:focus {
+  box-shadow: 0 0 0 0.25rem rgba(71, 93, 117, 0.25) !important;
+}
+
+.btn-secondary {
+  background-color: #DCE4F1 !important;
+  color: black !important;
+  border-color: #DCE4F1 !important;
+}
+.btn-secondary:hover {
+  opacity: 0.85;
+}
+.btn-secondary:focus {
+  box-shadow: 0 0 0 0.25rem rgba(193, 201, 214, 0.25) !important;
 }
 
 main {
   margin-top: 80px;
 }
 
+nav.navbar .nav-link, nav.navbar .dropdown-item {
+  color: black !important;
+}
+nav.navbar .nav-link:hover, nav.navbar .dropdown-item:hover {
+  background-color: #F9F5F8;
+}
+
 .ad-card {
   background-size: contain;
   background: url("../img/finder-ad-bg.jpg") no-repeat center;
+}
+
+#categories-container .card:hover, #categories-container .card:focus {
+  cursor: pointer;
+  border-color: #475D75;
+  transform: translateY(-3px);
+  transition: all ease-in-out 150ms;
+}
+
+#circulars-container .card:not(.ad-card) {
+  border: 1px solid transparent !important;
+}
+#circulars-container .card:not(.ad-card):hover, #circulars-container .card:not(.ad-card):focus {
+  border-color: #475D75 !important;
+  cursor: pointer;
+  transform: translateY(-3px);
+  transition: all ease-in-out 150ms;
 }
 
 footer a, footer p, footer .nav-link, footer .btn, footer h3 {

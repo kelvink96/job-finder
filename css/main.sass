@@ -4,9 +4,36 @@
 main
   margin-top: 80px
 
+nav.navbar
+  .nav-link, .dropdown-item
+    color: black !important
+
+    &:hover
+      background-color: $color-light-gray
+
 .ad-card
   background-size: contain
   background: url("../img/finder-ad-bg.jpg") no-repeat center
+
+#categories-container
+  .card
+    &:hover,
+    &:focus
+      cursor: pointer
+      border-color: $color-dark-blue
+      transform: translateY(-3px)
+      transition: all ease-in-out 150ms
+
+#circulars-container
+  .card:not(.ad-card)
+    border: 1px solid transparent !important
+
+    &:hover,
+    &:focus
+      border-color: $color-dark-blue !important
+      cursor: pointer
+      transform: translateY(-3px)
+      transition: all ease-in-out 150ms
 
 footer
   a, p, .nav-link, .btn, h3

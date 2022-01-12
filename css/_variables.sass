@@ -30,16 +30,33 @@ input:focus,
   box-shadow: 0 0 0 0.25rem rgb(71 93 117 / 25%)
   border-color: $color-dark-blue
 
-.form-range
-  &::-webkit-slider-thumb, &::-moz-range-thumb, &::-ms-thumb
-    background: gray !important
+.form-check-label
+  text-transform: capitalize
 
--webkit-slider-thumb
-  &:active
-    background-color: red !important
+@mixin btn-hover-effect($opacity)
+  opacity: $opacity
 
-  box-shadow: red !important
+.btn
+  text-transform: capitalize
 
-.form-range:focus
-  &::-webkit-slider-thumb, &::-moz-range-thumb, &::-ms-thumb
-    box-shadow: red !important
+.btn-primary
+  background-color: $color-dark-blue !important
+  color: white !important
+  border-color: $color-dark-blue !important
+
+  &:hover
+    @include btn-hover-effect(.85)
+
+  &:focus
+    box-shadow: 0 0 0 0.25rem rgb(71 93 117 / 25%) !important
+
+.btn-secondary
+  background-color: $color-lighter-blue !important
+  color: black !important
+  border-color: $color-lighter-blue !important
+
+  &:hover
+    @include btn-hover-effect(.85)
+
+  &:focus
+    box-shadow: 0 0 0 0.25rem rgb(193 201 214 / 25%) !important
