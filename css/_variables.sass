@@ -1,6 +1,9 @@
 html, body
   font-family: 'Source Sans 3', sans-serif
 
+// variables
+$form-range-thumb-bg: $color-dark-blue !important
+
 .bg-primary
   background-color: rgba($color-dark-blue, var(--bs-bg-opacity)) !important
 
@@ -12,3 +15,48 @@ html, body
 
 .text-secondary
   color: $color-light-gray !important
+
+.bg-lighter
+  background-color: $color-light-gray
+
+.form-check-input:checked
+  background-color: $color-dark-blue
+  color: $color-dark-blue
+
+input:focus,
+.form-control:focus,
+.form-check-input:focus,
+.form-select:focus
+  box-shadow: 0 0 0 0.25rem rgb(71 93 117 / 25%)
+  border-color: $color-dark-blue
+
+.form-check-label
+  text-transform: capitalize
+
+@mixin btn-hover-effect($opacity)
+  opacity: $opacity
+
+.btn
+  text-transform: capitalize
+
+.btn-primary
+  background-color: $color-dark-blue !important
+  color: white !important
+  border-color: $color-dark-blue !important
+
+  &:hover
+    @include btn-hover-effect(.85)
+
+  &:focus
+    box-shadow: 0 0 0 0.25rem rgb(71 93 117 / 25%) !important
+
+.btn-secondary
+  background-color: $color-lighter-blue !important
+  color: black !important
+  border-color: $color-lighter-blue !important
+
+  &:hover
+    @include btn-hover-effect(.85)
+
+  &:focus
+    box-shadow: 0 0 0 0.25rem rgb(193 201 214 / 25%) !important

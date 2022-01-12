@@ -21,8 +21,119 @@ html, body {
   color: #F9F5F8 !important;
 }
 
+.bg-lighter {
+  background-color: #F9F5F8;
+}
+
+.form-check-input:checked {
+  background-color: #475D75;
+  color: #475D75;
+}
+
+input:focus,
+.form-control:focus,
+.form-check-input:focus,
+.form-select:focus {
+  box-shadow: 0 0 0 0.25rem rgba(71, 93, 117, 0.25);
+  border-color: #475D75;
+}
+
+.form-check-label {
+  text-transform: capitalize;
+}
+
+.btn {
+  text-transform: capitalize;
+}
+
+.btn-primary {
+  background-color: #475D75 !important;
+  color: white !important;
+  border-color: #475D75 !important;
+}
+.btn-primary:hover {
+  opacity: 0.85;
+}
+.btn-primary:focus {
+  box-shadow: 0 0 0 0.25rem rgba(71, 93, 117, 0.25) !important;
+}
+
+.btn-secondary {
+  background-color: #DCE4F1 !important;
+  color: black !important;
+  border-color: #DCE4F1 !important;
+}
+.btn-secondary:hover {
+  opacity: 0.85;
+}
+.btn-secondary:focus {
+  box-shadow: 0 0 0 0.25rem rgba(193, 201, 214, 0.25) !important;
+}
+
 main {
   margin-top: 80px;
+}
+
+nav.navbar .nav-link, nav.navbar .dropdown-item {
+  color: black !important;
+}
+nav.navbar .nav-link:hover, nav.navbar .dropdown-item:hover {
+  background-color: #F9F5F8;
+}
+
+.ad-card {
+  background-size: contain;
+  background: url("../img/finder-ad-bg.jpg") no-repeat center;
+}
+
+#categories-container .card:hover, #categories-container .card:focus {
+  cursor: pointer;
+  border-color: #475D75;
+  transform: translateY(-3px);
+  transition: all ease-in-out 150ms;
+}
+
+#circulars-container .card:not(.ad-card) {
+  border: 1px solid transparent !important;
+}
+#circulars-container .card:not(.ad-card):hover, #circulars-container .card:not(.ad-card):focus {
+  border-color: #475D75 !important;
+  cursor: pointer;
+  transform: translateY(-3px);
+  transition: all ease-in-out 150ms;
+}
+
+footer a, footer p, footer .nav-link, footer .btn, footer h3 {
+  color: #F9F5F8;
+}
+footer a, footer .nav-link {
+  text-transform: capitalize;
+}
+
+/* Extra small devices (phones, 600px and down) */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  #collapseOtherFilters {
+    display: block;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .example {
+    background: blue;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .example {
+    background: orange;
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .example {
+    background: pink;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
