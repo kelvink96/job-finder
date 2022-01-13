@@ -74,10 +74,10 @@ main {
   margin-top: 80px;
 }
 
-nav.navbar .nav-link, nav.navbar .dropdown-item {
+nav.navbar .nav-link, nav.navbar .dropdown-item:not(.text-danger) {
   color: black !important;
 }
-nav.navbar .nav-link:hover, nav.navbar .dropdown-item:hover {
+nav.navbar .nav-link:hover, nav.navbar .dropdown-item:not(.text-danger):hover {
   background-color: #F9F5F8;
 }
 
@@ -109,31 +109,15 @@ footer a, footer p, footer .nav-link, footer .btn, footer h3 {
 footer a, footer .nav-link {
   text-transform: capitalize;
 }
+footer a:hover, footer a:focus, footer .nav-link:hover, footer .nav-link:focus {
+  color: #DCE4F1;
+  text-decoration: underline;
+}
 
 /* Extra small devices (phones, 600px and down) */
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-  #collapseOtherFilters {
-    display: block;
-  }
-}
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-  .example {
-    background: blue;
-  }
-}
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-  .example {
-    background: orange;
-  }
-}
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-  .example {
-    background: pink;
-  }
-}
 
 /*# sourceMappingURL=main.css.map */
