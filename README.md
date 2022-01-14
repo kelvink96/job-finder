@@ -3,7 +3,7 @@
 
 ## Vendor libraries
 - [bootstrap-v5.1.3](https://getbootstrap.com/)
-- [font-awesome-free 5.15.1](https://icons8.com/line-awesome)
+- [font-awesome-free 5.15.1](https://fontawesome.com/)
 
 ## Included pages
 ### 1. Landing
